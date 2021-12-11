@@ -6,7 +6,7 @@
   overflow: hidden;
   border-radius: 4px;
 
-  &__image{
+  &__image {
     width: 100%;
   }
 }
@@ -34,4 +34,121 @@
     }
   }
 
+}
+
+.site-news {
+  $image-size: 75px;
+  $local-gap: $gap / 3 * 2;
+  $image-size-with-padding: $image-size + $local-gap;
+
+  &-item {
+    clear: both;
+    position: relative;
+
+    &:not(:last-child) {
+      min-height: $image-size-with-padding;
+      margin-bottom: $gap;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        height: 1px;
+        color: $color-gray;
+      }
+    }
+
+    &:hover {
+
+      a {
+        color: $color-accent;
+      }
+
+      .thumbnail {
+        background-color: $color-accent;
+        border-color: $color-accent;
+      }
+    }
+
+
+    &::after {
+      width: calc(100% - #{$image-size-with-padding});
+    }
+
+    &__thumbnail {
+      float: left;
+      margin: 0 $local-gap $local-gap 0;
+      width: $image-size;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__title {
+      margin-bottom: $local-gap;
+    }
+
+    &__link {
+      @include block-shortener(1rem, 1.5, 50px, 2);
+      transition: color 0.25s;
+    }
+
+    &__date {
+      text-align: right;
+      color: darken($color-gray, 30%);
+      font-size: 0.8rem;
+    }
+
+  }
+}
+
+.top-films {
+  &__body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__list {
+    margin-bottom: 0;
+  }
+
+  &__item {
+    margin-left: -1px;
+    margin-right: -1px;
+    background-color: transparent;
+    color: $color-primary !important;
+    padding-right: 55px;
+
+    &:hover,
+    &:focus {
+      background-color: $color-accent !important;
+      border-color: $color-accent !important;
+      color: $color-white !important;
+
+      .badge {
+        background-color: $color-dark;
+      }
+    }
+
+
+    &:first-child {
+      border-radius: 0;
+      border-top: none;
+    }
+
+    &:last-child {
+      border-radius: 0;
+      border-bottom: none;
+    }
+
+  }
+
+  &__badge {
+    position: absolute;
+    top: 50%;
+    right: $gap;
+    transform: translateY(-50%);
+  }
 }

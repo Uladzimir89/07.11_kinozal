@@ -62,6 +62,12 @@
   font-size: 0.875rem;
 }
 
+.thumbnail {
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
 html {
   font-size: 16px;
 }
@@ -126,6 +132,100 @@ a:hover, a:focus {
 }
 .user-login__tabs .active a {
   color: #ffffff !important;
+}
+
+.site-news-item {
+  clear: both;
+  position: relative;
+}
+.site-news-item:not(:last-child) {
+  min-height: 85px;
+  margin-bottom: 15px;
+}
+.site-news-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  height: 1px;
+  color: #d5d5d5;
+}
+.site-news-item:hover a {
+  color: #df8a13;
+}
+.site-news-item:hover .thumbnail {
+  background-color: #df8a13;
+  border-color: #df8a13;
+}
+.site-news-item::after {
+  width: calc(100% - 85px);
+}
+.site-news-item__thumbnail {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 75px;
+}
+.site-news-item__image {
+  width: 100%;
+}
+.site-news-item__title {
+  margin-bottom: 10px;
+}
+.site-news-item__link {
+  display: -webkit-box;
+  overflow: hidden;
+  height: 50px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+.site-news-item__date {
+  text-align: right;
+  color: #898989;
+  font-size: 0.8rem;
+}
+
+.top-films__body {
+  padding-left: 0;
+  padding-right: 0;
+}
+.top-films__list {
+  margin-bottom: 0;
+}
+.top-films__item {
+  margin-left: -1px;
+  margin-right: -1px;
+  background-color: transparent;
+  color: #165690 !important;
+  padding-right: 55px;
+}
+.top-films__item:hover, .top-films__item:focus {
+  background-color: #df8a13 !important;
+  border-color: #df8a13 !important;
+  color: #ffffff !important;
+}
+.top-films__item:hover .badge, .top-films__item:focus .badge {
+  background-color: #232323;
+}
+.top-films__item:first-child {
+  border-radius: 0;
+  border-top: none;
+}
+.top-films__item:last-child {
+  border-radius: 0;
+  border-bottom: none;
+}
+.top-films__badge {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 @media (min-width: 576px) {
   .header-logo__title {
