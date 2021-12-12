@@ -1,3 +1,40 @@
-.main  {
+.main {
   @extend %margin-bottom-lg;
+}
+
+.new-films {
+  position: relative;
+  overflow: hidden;
+
+  &-row {
+    margin-right: -$gap / 2;
+    margin-left: -$gap / 2;
+    margin-bottom: -$gap;
+  }
+
+  &-item {
+    margin-bottom: $gap;
+    padding-right: $gap / 2;
+    padding-left: $gap / 2;
+
+    &__caption {
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+.new-films-top {
+  position: relative;
+  overflow: hidden;
 }

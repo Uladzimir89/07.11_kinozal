@@ -20,13 +20,32 @@ a {
 }
 
 h1 {
+  font-family: $font-header;
+  font-size: 3rem;
+  margin: -($gap / 3 *2) 0 1em 0;
+
+  &::after {
+    position: absolute;
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+    content: "";
+    border-bottom: 3px solid $color-accent-light;
+  }
 }
 
 h2 {
+  &::after {
+    position: absolute;
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+    content: "";
+    border-bottom: 3px solid $color-accent-light;
+  }
 }
 
 h3 {
 }
 
 section {
+
 }
