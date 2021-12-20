@@ -38,7 +38,7 @@
 
 .site-news {
   $image-size: 75px;
-  $local-gap:calc($gap / 3 * 2);
+  $local-gap: calc ($gap / 3 * 2);
   $image-size-with-padding: $image-size + $local-gap;
 
   &-item {
