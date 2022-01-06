@@ -51,8 +51,8 @@
 
         <div class="collapse navbar-collapse" id="navbar-top">
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="index.html">Главная</a></li>
-            <li class="active"><a href="page.html">Фильмы</a></li>
+            <li class="active"><a href="index.html">Главная</a></li>
+            <li><a href="page.html">Фильмы</a></li>
             <li><a href="#">Сериалы</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
@@ -72,17 +72,12 @@
   <div class="row">
     <main class="main col-lg-9 col-lg-push-3 col-md-8 col-md-push-4">
 
-      <section class="site-search panel panel-info visible-sm visible-xs">
+      <section class="site-search panel panel-info hidden-lg hidden-md">
         <div class="panel-heading">Поиск</div>
         <div class="panel-body">
           <form action="search">
             <div class="input-group input-group-lg">
-              <input
-                  class="form-control"
-                  name="search"
-                  type="search"
-                  placeholder="Поиск по сайту"
-              />
+              <input class="form-control" name="search" type="search" placeholder="Поиск по сайту"/>
               <span class="input-group-btn">
                   <button class="btn btn-default" type="submit">
                     <span class="glyphicon glyphicon-search"></span>
@@ -93,39 +88,25 @@
         </div>
       </section>
 
-      <section class="user-login panel panel-info visible-sm visible-xs">
+      <section class="user-login panel panel-info hidden-lg hidden-md">
         <div class="panel-heading">Пользователь</div>
         <div class="panel-body">
           <div>
             <ul class="user-login__tabs nav nav-tabs" role="tablist">
               <li role="presentation" class="active">
-                <a
-                    href="#user-login-main"
-                    aria-controls="user-login-main"
-                    role="tab"
-                    data-toggle="tab"
-                >
+                <a href="#user-login-main" aria-controls="user-login-main" role="tab" data-toggle="tab">
                   <span class="glyphicon glyphicon-log-in"></span>
                 </a>
               </li>
               <li role="presentation">
-                <a
-                    href="#user-registration-main"
-                    aria-controls="user-registration-main"
-                    role="tab"
-                    data-toggle="tab"
-                >
+                <a href="#user-registration-main" aria-controls="user-registration-main" role="tab" data-toggle="tab">
                   <span class="glyphicon glyphicon-user"></span>
                 </a>
               </li>
             </ul>
 
             <div class="user-login__content tab-content">
-              <div
-                  role="tabpanel"
-                  class="tab-pane fade in active"
-                  id="user-login-main"
-              >
+              <div role="tabpanel" class="tab-pane fade in active" id="user-login-main">
                 <form action="login">
                   <div class="form-group">
                     <input
@@ -150,11 +131,7 @@
                 </form>
               </div>
 
-              <div
-                  role="tabpanel"
-                  class="tab-pane fade"
-                  id="user-registration-main"
-              >
+              <div role="tabpanel" class="tab-pane fade" id="user-registration-main">
                 <form action="registration">
                   <div class="form-group">
                     <input
@@ -732,10 +709,7 @@
               <img class="site-news-item__image" src="assets/img/75x75.png" alt="">
             </div>
             <div class="site-news-item__title">
-              <a class="site-news-item__link" href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                inventore nesciunt
-                non
-                quibusdam quos similique.</a>
+              <a class="site-news-item__link" href="">Мы запустили новый сервис - КиноМонстр</a>
             </div>
             <div class="site-news-item__date">
               12 июня 2021
@@ -747,10 +721,7 @@
               <img class="site-news-item__image" src="assets/img/75x75.png" alt="">
             </div>
             <div class="site-news-item__title">
-              <a class="site-news-item__link" href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                inventore nesciunt
-                non
-                quibusdam quos similique.</a>
+              <a class="site-news-item__link" href="">На сайте добавлен новый функционал</a>
             </div>
             <div class="site-news-item__date">
               11 июня 2021
@@ -762,10 +733,7 @@
               <img class="site-news-item__image" src="assets/img/75x75.png" alt="">
             </div>
             <div class="site-news-item__title">
-              <a class="site-news-item__link" href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                inventore nesciunt
-                non
-                quibusdam quos similique.</a>
+              <a class="site-news-item__link" href="">Скорость скачивания фильмов увеличена</a>
             </div>
             <div class="site-news-item__date">
               10 июня 2021
@@ -777,10 +745,7 @@
               <img class="site-news-item__image" src="assets/img/75x75.png" alt="">
             </div>
             <div class="site-news-item__title">
-              <a class="site-news-item__link" href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                inventore nesciunt
-                non
-                quibusdam quos similique.</a>
+              <a class="site-news-item__link" href="">Оптимизирована производительность сервера</a>
             </div>
             <div class="site-news-item__date">
               09 июня 2021
@@ -792,10 +757,7 @@
               <img class="site-news-item__image" src="assets/img/75x75.png" alt="">
             </div>
             <div class="site-news-item__title">
-              <a class="site-news-item__link" href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-                inventore nesciunt
-                non
-                quibusdam quos similique.</a>
+              <a class="site-news-item__link" href="">Количество пользователей перевалила за 10 000</a>
             </div>
             <div class="site-news-item__date">
               08 июня 2021
@@ -810,46 +772,40 @@
         <div class="panel-heading">Рейтинг фильмов</div>
         <div class="top-films__body panel-body">
           <div class="top-films__list list-group">
-            <a class="top-films__item list-group-item" href="#">Cras justo odio
+            <a class="top-films__item list-group-item" href="#">Марсианин
               <span class="top-films__badge badge">9.2</span>
             </a>
-            <a class="top-films__item list-group-item" href="#">Dapibus ac facilisis in
+            <a class="top-films__item list-group-item" href="#">Иллюзия обмана 2
               <span class="top-films__badge badge">9.1</span>
             </a>
-            <a class="top-films__item list-group-item" href="#">Morbi leo risus
+            <a class="top-films__item list-group-item" href="#">Из машины
               <span class="top-films__badge badge">8.1</span>
             </a>
-            <a class="top-films__item list-group-item" href="#">Porta ac consectetur a
+            <a class="top-films__item list-group-item" href="#">Люси
               <span class="top-films__badge badge">5.1</span>
             </a>
-            <a class="top-films__item list-group-item" href="#">Vestibulum at eros
+            <a class="top-films__item list-group-item" href="#">Выхода нет
               <span class="top-films__badge badge">7.1</span>
             </a>
 
-            <a class="top-films__item list-group-item" href="#">Dapibus ac facilisis in
+            <a class="top-films__item list-group-item" href="#">Стражи галактики
               <span class="top-films__badge badge">9.1</span>
             </a>
-            <a class="top-films__item list-group-item" href="#">Morbi leo risus
+            <a class="top-films__item list-group-item" href="#">Человек муравей
               <span class="top-films__badge badge">8.1</span>
             </a>
-            <a class="top-films__item list-group-item" href="#">Porta ac consectetur a
+            <a class="top-films__item list-group-item" href="#">Месть от кутюр
               <span class="top-films__badge badge">5.1</span>
             </a>
-            <a class="top-films__item list-group-item" href="#">Vestibulum at eros
+            <a class="top-films__item list-group-item" href="#">Люди Икс
               <span class="top-films__badge badge">7.1</span>
             </a>
 
-            <a class="top-films__item list-group-item" href="#">Dapibus ac facilisis in
+            <a class="top-films__item list-group-item" href="#">Занесло
               <span class="top-films__badge badge">9.1</span>
             </a>
-            <a class="top-films__item list-group-item" href="#">Morbi leo risus
+            <a class="top-films__item list-group-item" href="#">Дочь Бога
               <span class="top-films__badge badge">8.1</span>
-            </a>
-            <a class="top-films__item list-group-item" href="#">Porta ac consectetur a
-              <span class="top-films__badge badge">5.1</span>
-            </a>
-            <a class="top-films__item list-group-item" href="#">Vestibulum at eros
-              <span class="top-films__badge badge">7.1</span>
             </a>
 
           </div>

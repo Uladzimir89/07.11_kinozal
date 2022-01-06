@@ -7,15 +7,15 @@
   overflow: hidden;
 
   &-row {
-    margin-right: -$gap / 2;
-    margin-left: -$gap / 2;
+    margin-right: -$gap-sm;
+    margin-left: -$gap-sm;
     margin-bottom: -$gap;
   }
 
   &-item {
     margin-bottom: $gap;
-    padding-right: $gap / 2;
-    padding-left: $gap / 2;
+    padding-right: $gap-sm;
+    padding-left: $gap-sm;
 
     &__caption {
       text-align: center;
@@ -34,7 +34,7 @@
 
 }
 
-.new-films-top {
+.new-films-top, .film-describe, .film-review, .film-comment {
   position: relative;
   overflow: hidden;
 }
@@ -72,6 +72,6 @@
 
 }
 
-.film-news-row {
+.film-comment-btn {
+  float: right;
 }
-

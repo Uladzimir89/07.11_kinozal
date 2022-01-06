@@ -1,3 +1,22 @@
-.emb-res {
-  border: 2px solid $color-gray;
+.film-video {
+  position: relative;
+  overflow: hidden;
+}
+
+.film-well {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.well-span {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.well-badge {
+  font-size: 0.8em;
+  margin-left: 5px;
 }

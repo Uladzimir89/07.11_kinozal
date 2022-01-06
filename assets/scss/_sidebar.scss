@@ -38,7 +38,7 @@
 
 .site-news {
   $image-size: 75px;
-  $local-gap: calc ($gap / 3 * 2);
+  $local-gap: $gap-md;
   $image-size-with-padding: $image-size + $local-gap;
 
   &-item {
@@ -53,9 +53,9 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: -5px;
+        bottom: -4px;
         height: 1px;
-        color: $color-gray;
+        background-color: $color-gray;
       }
     }
 

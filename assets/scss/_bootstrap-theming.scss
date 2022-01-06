@@ -71,7 +71,12 @@
   box-shadow: none;
 
   &:not(:last-of-type) {
-  margin-bottom: $gap * 2;
+
+    @include md-sm {
+      margin-bottom: $gap * 3;
+    }
+
+    margin-bottom: $gap * 2;
   }
 
   &:last-of-type {
@@ -82,13 +87,14 @@
     border: 1px solid $color-gray;
   }
 
-  &-info> &-heading {
+  &-info > &-heading {
     color: $color-white;
     background-color: $color-accent;
-    border-color: $color-accent;
-    font-size: 1.2rem;
-    letter-spacing: 0.1em;
+    border: none;
+    font-size: 1.25rem;
+    letter-spacing: 0.08em;
   }
+
 }
 
 .input {
@@ -102,5 +108,14 @@
   transition: background-color 0.25s;
 }
 
+.embed-responsive {
+  border: 1px solid $color-gray;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+}
+
+.well {
+  border: 1px solid $color-gray;
+}
 
 
